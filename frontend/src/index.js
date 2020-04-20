@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
+// import FPSStats from 'react-fps-stats';
 import App from './App';
 
 ReactDOM.render(

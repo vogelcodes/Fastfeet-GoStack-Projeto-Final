@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 
-import PkgStatus from '../../components/PkgStatus';
-
 import api from '../../services/api';
 
-import { Container } from './styles';
+import {} from '../NewPackage/styles';
 import history from '../../services/history';
 
 export default function NewCourier() {
@@ -30,7 +27,7 @@ export default function NewCourier() {
     }
   }
   return (
-    <Container>
+    <div className="login-box">
       <h2>Cadastrar Entregador</h2>
       <Form schema={schema} onSubmit={handleSubmit}>
         <strong>Nome</strong>
@@ -40,6 +37,6 @@ export default function NewCourier() {
 
         <button type="submit">Salvar</button>
       </Form>
-    </Container>
+    </div>
   );
 }

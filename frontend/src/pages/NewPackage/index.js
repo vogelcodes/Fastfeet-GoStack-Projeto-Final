@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 
-import PkgStatus from '../../components/PkgStatus';
-
 import api from '../../services/api';
 
-import { Container } from './styles';
 import history from '../../services/history';
 
 export default function NewPackage() {
@@ -32,7 +28,7 @@ export default function NewPackage() {
     }
   }
   return (
-    <Container>
+    <div className="login-box">
       <h2>Cadastrar Encomenda</h2>
       <Form schema={schema} onSubmit={handleSubmit}>
         <strong>Destinatário</strong>
@@ -44,6 +40,6 @@ export default function NewPackage() {
 
         <button type="submit">Salvar</button>
       </Form>
-    </Container>
+    </div>
   );
 }
