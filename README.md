@@ -1,5 +1,5 @@
 # Fastfeet-GoStack-Projeto-Final
-Frontend ReactJS rodando em https://vogelcodes.github.io/
+Frontend ReactJS rodando em https://fastfeet-vogelcodes.netlify.app/
 
 
 Backend em NodeJS/Express para o desafio Final GoStack da Rocketseat
